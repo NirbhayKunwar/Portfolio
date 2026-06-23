@@ -93,7 +93,7 @@ const Hero = ({ vibe }) => {
           <h2 className="hero-tagline">
             {vibe === 'academic' ? (
               <>
-                Aspiring <span className="highlight-text">Software Engineering Graduate</span> Student
+                B.Tech (CSE) Graduate with specialization in <span className="highlight-text">Full Stack Development and DevOps</span>
               </>
             ) : (
               <>
