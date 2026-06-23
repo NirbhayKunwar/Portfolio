@@ -1,0 +1,302 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 80px; /* Header height offset */
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 5rem;
+  align-items: center;
+  z-index: 5;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-badge-container {
+  margin-bottom: 1.8rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px; /* Cyber square badge */
+  background: rgba(var(--accent-color-rgb), 0.08);
+  border: 1px solid rgba(var(--accent-color-rgb), 0.25);
+  color: var(--accent-color);
+  font-family: var(--font-headings);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 15px rgba(var(--accent-color-rgb), 0.03);
+}
+
+.hero-badge-icon {
+  color: var(--accent-color);
+}
+
+.hero-subtitle {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-family: var(--font-headings);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.hero-name {
+  display: block;
+  font-size: 4.8rem; /* Expanded font size */
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  background: linear-gradient(to bottom, #ffffff 40%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.0;
+  margin-bottom: 1.2rem;
+}
+
+.hero-tagline {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 1.8rem;
+  letter-spacing: -0.02em;
+}
+
+.highlight-text {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.2rem;
+  max-width: 580px;
+  line-height: 1.8;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+.hero-tag-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 6px; /* Cyber corners */
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: var(--transition-smooth);
+}
+
+.hero-tag-item:hover {
+  border-color: rgba(var(--accent-color-rgb), 0.3);
+  color: var(--text-primary);
+}
+
+.hero-tag-item svg {
+  color: var(--accent-color);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Right Visual Column - Redesigned Frame */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: fadeInUp 1s ease-out;
+}
+
+.photo-frame-wrapper {
+  position: relative;
+  width: 320px;
+  height: 380px;
+}
+
+.photo-glowing-blob {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: var(--accent-gradient);
+  filter: blur(50px);
+  border-radius: 1.5rem;
+  opacity: 0.25; /* Softer ambient glow */
+  z-index: 1;
+  transition: var(--transition-smooth);
+}
+
+.photo-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem; /* Shrunk radius for cyber style */
+  border: 1px solid rgba(var(--accent-color-rgb), 0.3); /* Neon outline matching theme */
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: var(--shadow-lg);
+  background: var(--bg-secondary);
+  
+  /* 3D Tilt properties */
+  transform-style: preserve-3d;
+  transition: transform 0.15s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.profile-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: translateZ(20px); /* Lift image for 3D depth */
+}
+
+.profile-img.active {
+  opacity: 1;
+  transform: scale(1) translateZ(20px);
+  pointer-events: auto;
+}
+
+.profile-img.inactive {
+  opacity: 0;
+  transform: scale(1.06) translateZ(0);
+  pointer-events: none;
+}
+
+/* Floating visual stats card */
+.visual-stats-card {
+  position: absolute;
+  bottom: 25px;
+  left: -35px;
+  padding: 1rem 1.5rem;
+  border-radius: 8px; /* Square cyber look */
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow-lg);
+  transform: translateZ(40px); /* Lift even higher */
+}
+
+.visual-stats-card.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.visual-stats-value {
+  font-family: var(--font-headings);
+  font-size: 2rem;
+  font-weight: 900;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.0;
+}
+
+.visual-stats-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.3rem;
+}
+
+/* Animations */
+.animate-pulse {
+  animation: pulseGlow 3s infinite;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .hero-name {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-name {
+    font-size: 3.5rem;
+  }
+  .hero-tagline {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 4rem;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+  }
+  .hero-content {
+    align-items: center;
+  }
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-tags, .hero-actions {
+    justify-content: center;
+  }
+  .photo-frame-wrapper {
+    width: 280px;
+    height: 330px;
+  }
+  .visual-stats-card {
+    left: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-name {
+    font-size: 3rem;
+  }
+  .photo-frame-wrapper {
+    width: 240px;
+    height: 285px;
+  }
+}
