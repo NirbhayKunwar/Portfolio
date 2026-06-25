@@ -114,7 +114,7 @@ const Hero = ({ vibe }) => {
             {vibe === 'academic' ? (
               <>
                 <span className="hero-tag-item"><Award size={14} /> 8.17 CGPA Distinction</span>
-                <span className="hero-tag-item"><Code size={14} /> Capstone: Event Analytics</span>
+                <span className="hero-tag-item"><Code size={14} /> Capstone: Frontend & Backend</span>
                 <span className="hero-tag-item"><Database size={14} /> SQL & Distributed Systems</span>
               </>
             ) : (
