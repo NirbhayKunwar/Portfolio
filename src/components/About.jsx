@@ -22,7 +22,7 @@ const About = ({ vibe }) => {
               {vibe === 'academic' ? (
                 <>
                   <p>
-                    Currently pursuing my <strong>B.Tech in Computer Science and Engineering</strong> (graduating in 2026), I have maintained a consistent academic excellence, achieving an <strong>8.17 CGPA</strong> with <strong>First Class Distinction</strong>.
+                    Currently pursuing my <strong>B.Tech in Computer Science and Engineering</strong> (graduating in 2026), I have maintained a consistent academic excellence, achieving an <strong>8.17 CGPA</strong>.
                   </p>
                   <p>
                     My academic focus lies in system architectures, software design, and user analytics. In my capstone project, I co-developed an Intelligent Traffic Management System (ITMS), leading frontend implementation and assisting with backend services while our team open-sourced the underlying traffic models.
@@ -73,7 +73,7 @@ const About = ({ vibe }) => {
             <div className="about-card glass-panel">
               <Award className="about-card-icon" size={24} />
               <h4>B.Tech CSE</h4>
-              <p>8.17 CGPA (First Class Distinction)</p>
+              <p>8.17 CGPA</p>
             </div>
             
             <div className="about-card glass-panel">

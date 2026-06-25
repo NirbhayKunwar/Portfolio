@@ -6,10 +6,10 @@ const Education = () => {
     {
       year: "2022 - 2026",
       degree: "B.Tech in Computer Science and Engineering",
-      institution: "First Class Distinction (Cumulative: 8.17 CGPA)",
+      institution: "Cumulative: 8.17 CGPA",
       details: [
         "Rigorous coursework in Data Structures, Database Systems (SQL/NoSQL), Operating Systems, Software Engineering methodologies, and Distributed Systems.",
-        "Maintained high standing, culminating in First Class Distinction honors.",
+        "Maintained high academic standing.",
         "Active member of tech clubs, coding forums, and collaborative academic projects."
       ],
       icon: <GraduationCap size={20} />,

@@ -104,7 +104,7 @@ const Hero = ({ vibe }) => {
 
           <p className="hero-description">
             {vibe === 'academic' ? (
-              "A B.Tech CSE candidate (graduating 2026) with an 8.17 CGPA First Class Distinction. Passionate about system architectures, lane analytics, and advanced software engineering concepts. Preparing to drive graduate research and development in premium Master's programs."
+              "A B.Tech CSE candidate (graduating 2026) with an 8.17 CGPA. Passionate about system architectures, lane analytics, and advanced software engineering concepts. Preparing to drive graduate research and development in premium Master's programs."
             ) : (
               "Building high-performance web applications and backend distributions. Specialized in React, Tailwind, Node.js, and MongoDB, while implementing Agile frameworks, sprint planning, and event-driven lane queue models."
             )}
@@ -113,7 +113,7 @@ const Hero = ({ vibe }) => {
           <div className="hero-tags">
             {vibe === 'academic' ? (
               <>
-                <span className="hero-tag-item"><Award size={14} /> 8.17 CGPA Distinction</span>
+                <span className="hero-tag-item"><Award size={14} /> 8.17 CGPA</span>
                 <span className="hero-tag-item"><Code size={14} /> Capstone: Frontend & Backend</span>
                 <span className="hero-tag-item"><Database size={14} /> SQL & Distributed Systems</span>
               </>
