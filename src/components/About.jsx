@@ -50,19 +50,19 @@ const About = ({ vibe }) => {
               <div className="commitment-item">
                 <CheckCircle size={18} className="commitment-icon" />
                 <span>
-                  {vibe === 'academic' ? "Strong focus on algorithmic rigor and design patterns" : "Responsive UI/UX design & performance tuning"}
+                  {vibe === 'academic' ? "Dedicated to software quality, clean code, and design principles" : "Responsive UI/UX design & performance tuning"}
                 </span>
               </div>
               <div className="commitment-item">
                 <CheckCircle size={18} className="commitment-icon" />
                 <span>
-                  {vibe === 'academic' ? "Hands-on experience with metropolitan feed simulators" : "RESTful API modeling and cluster management"}
+                  {vibe === 'academic' ? "Experienced in full-stack integration and database management" : "RESTful API modeling and cluster management"}
                 </span>
               </div>
               <div className="commitment-item">
                 <CheckCircle size={18} className="commitment-icon" />
                 <span>
-                  {vibe === 'academic' ? "Committed to rigorous scientific research standards" : "Agile Scrum participation, Sprint and Ticket tracking"}
+                  {vibe === 'academic' ? "Focus on systems performance, reliability, and modern devops" : "Agile Scrum participation, Sprint and Ticket tracking"}
                 </span>
               </div>
             </div>
