@@ -375,6 +375,15 @@ a {
   color: var(--text-primary);
 }
 
+/* Ensure high contrast white text/icons on dark accent elements in Light Theme */
+.theme-light .btn-primary,
+.theme-light .theme-toggle-option.active,
+.theme-light .footer-vibe-pill:hover,
+.theme-light .vibe-slider-thumb,
+.theme-light .timeline-item:hover .timeline-icon {
+  color: #ffffff !important;
+}
+
 /* ==========================================================================
    VIBRANT ACCENT SPECTRUM PRESETS
    ========================================================================== */
