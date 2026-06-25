@@ -40,7 +40,7 @@ const About = ({ vibe }) => {
                     I work comfortably across the stack. On the frontend, I create responsive interfaces in React. On the backend, I design RESTful APIs in Node.js and manage data distributions across MongoDB Atlas clusters and relational SQL stores.
                   </p>
                   <p>
-                    Collaborating in team settings is where I thrive. I utilize <strong>Agile frameworks (Jira, Scrum, Kanban)</strong> to plan sprints, track deliverables, and maintain high standards of code quality and release reliability.
+                    I excel in collaborative environments, leveraging <strong>Agile frameworks (Jira, Scrum, Kanban)</strong> and git-based workflows to streamline development, align deliverables, and maintain a high bar for code quality and release reliability.
                   </p>
                 </>
               )}
