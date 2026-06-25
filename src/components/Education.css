@@ -18,7 +18,7 @@
   top: 15px;
   bottom: 15px;
   width: 2px;
-  background: linear-gradient(to bottom, var(--border-color) 0%, var(--accent-color) 30%, var(--accent-secondary) 70%, var(--border-color) 100%);
+  background: var(--accent-color);
   z-index: 1;
 }
 

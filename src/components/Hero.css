@@ -63,9 +63,7 @@
   font-size: 4.8rem; /* Expanded font size */
   font-weight: 900;
   letter-spacing: -0.04em;
-  background: linear-gradient(to bottom, #ffffff 40%, var(--text-secondary) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
   line-height: 1.0;
   margin-bottom: 1.2rem;
 }
@@ -80,9 +78,7 @@
 }
 
 .highlight-text {
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-color);
   position: relative;
 }
 
@@ -147,17 +143,7 @@
 }
 
 .photo-glowing-blob {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  background: var(--accent-gradient);
-  filter: blur(50px);
-  border-radius: 1.5rem;
-  opacity: 0.25; /* Softer ambient glow */
-  z-index: 1;
-  transition: var(--transition-smooth);
+  display: none;
 }
 
 .photo-frame {
@@ -222,9 +208,7 @@
   font-family: var(--font-headings);
   font-size: 2rem;
   font-weight: 900;
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent-color);
   line-height: 1.0;
 }
 
