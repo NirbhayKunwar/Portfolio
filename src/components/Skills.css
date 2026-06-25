@@ -148,6 +148,25 @@
   line-height: 1.5;
 }
 
+/* Light Theme overrides for tooltips */
+.theme-light .skill-tooltip {
+  background: #ffffff;
+  border-color: rgba(var(--accent-color-rgb), 0.3);
+  box-shadow: var(--shadow-lg), 0 8px 30px rgba(0, 0, 0, 0.08), 0 0 10px rgba(var(--accent-color-rgb), 0.05);
+}
+
+.theme-light .skill-tooltip::after {
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.theme-light .tooltip-title {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.theme-light .tooltip-content {
+  color: var(--text-secondary);
+}
+
 /* Skills Tip Footer */
 .skills-tip {
   margin-top: 3.5rem;
