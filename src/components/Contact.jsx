@@ -91,7 +91,7 @@ const Contact = ({ vibe, setVibe }) => {
             <h3 className="contact-subtitle">Connection Registry</h3>
             <p className="contact-info-desc">
               {vibe === 'academic' ? (
-                "Review my academic credentials, discuss admissions opportunities, or request comprehensive course syllabi and research dossiers."
+                "Feel free to connect regarding development opportunities, project collaborations, or to discuss software engineering and systems architecture."
               ) : (
                 "Have a project, a full-stack job opportunity, or just want to chat about traffic simulation algorithms? Drop me a message!"
               )}
