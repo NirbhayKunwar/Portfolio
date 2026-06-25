@@ -25,7 +25,7 @@ const About = ({ vibe }) => {
                     Currently pursuing my <strong>B.Tech in Computer Science and Engineering</strong> (graduating in 2026), I have maintained a consistent academic excellence, achieving an <strong>8.17 CGPA</strong> with <strong>First Class Distinction</strong>.
                   </p>
                   <p>
-                    My academic focus lies in system architectures, event-driven analytics, and network simulations. In my capstone project, I engineered an Intelligent Traffic Management System (ITMS) using lane queue analytics, establishing a deep interest in algorithmic problem solving and simulation methodologies.
+                    My academic focus lies in system architectures, software design, and user analytics. In my capstone project, I co-developed an Intelligent Traffic Management System (ITMS), leading frontend implementation and assisting with backend services while our team open-sourced the underlying traffic models.
                   </p>
                   <p>
                     My target is to enroll in a high-caliber <strong>Master's in Software Engineering Program</strong>. I aim to leverage my robust background in software design and distributed systems to conduct research that bridges theoretical excellence and real-world system dependability.

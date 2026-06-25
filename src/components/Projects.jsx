@@ -16,8 +16,8 @@ const Projects = () => {
             </div>
             
             <p className="project-description">
-              Engineered an event-driven lane queue analytics framework that simulates Metropolitan feeds. 
-              The system deploys prioritization logics handling dynamic emergency vehicle clearance phases by intercepting sensor cues, allocating maximum green-time, and suspending normal loop timers until the priority queue is drained.
+              Developed the frontend interface and integrated key backend services for an event-driven lane queue analytics system.
+              Collaborated with teammates to design and open-source the core traffic models and emergency vehicle prioritization services, which dynamically allocate green-time based on live simulated sensor feeds.
             </p>
 
             <div className="project-tags">

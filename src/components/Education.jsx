@@ -17,12 +17,12 @@ const Education = () => {
     },
     {
       year: "2025 - 2026",
-      degree: "Capstone Project & Research Focus",
+      degree: "Capstone Project & Frontend Integration",
       institution: "Intelligent Traffic Management System (ITMS)",
       details: [
-        "Designed event-driven lane queue analytics simulating metropolitan traffic feeds.",
-        "Built prioritizations systems to handle real-time emergency vehicle clearances.",
-        "Conducted evaluations on lane congestion models, establishing a strong foundation in simulation, mathematical modeling, and software engineering design patterns."
+        "Led frontend UI design and built visual dashboards simulating metropolitan priority lane queues.",
+        "Integrated backend API services interfacing with event-driven data flows.",
+        "Collaborated with teammates to deploy and open-source the core traffic models and emergency prioritization services."
       ],
       icon: <Award size={20} />,
       badge: "Academic Capstone"
