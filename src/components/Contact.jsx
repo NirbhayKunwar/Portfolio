@@ -93,7 +93,7 @@ const Contact = ({ vibe, setVibe }) => {
               {vibe === 'academic' ? (
                 "Feel free to connect regarding development opportunities, project collaborations, or to discuss software engineering and systems architecture."
               ) : (
-                "Have a project, a full-stack job opportunity, or just want to chat about traffic simulation algorithms? Drop me a message!"
+                "Have a project, a full-stack job opportunity, or just want to chat? Drop me a message!"
               )}
             </p>
 
