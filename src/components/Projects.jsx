@@ -28,6 +28,34 @@ const Projects = () => {
               <span>Simulations</span>
             </div>
 
+            {/* Architecture breakdown */}
+            <div className="itms-features glass-panel">
+              <h4 className="features-title">Core Development Features</h4>
+              <div className="features-list">
+                <div className="feature-item">
+                  <CheckCircle2 size={16} className="feature-check" />
+                  <div>
+                    <h5>Simulation Control Hub</h5>
+                    <p>Implemented interactive controls to trigger simulated vehicle spawns and adjust real-time traffic density parameters.</p>
+                  </div>
+                </div>
+                <div className="feature-item">
+                  <CheckCircle2 size={16} className="feature-check" />
+                  <div>
+                    <h5>Queue Analytics Dashboard</h5>
+                    <p>Built React components to visualize active lane queues and signal cycle intervals updated by simulated sensor feeds.</p>
+                  </div>
+                </div>
+                <div className="feature-item">
+                  <CheckCircle2 size={16} className="feature-check" />
+                  <div>
+                    <h5>Priority Signal Visualizer</h5>
+                    <p>Integrated UI indicators showing when emergency vehicle priority override routines are active on specific lanes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="project-actions">
               <a 
                 href="https://intelligent-traffic-management-system.vercel.app" 
