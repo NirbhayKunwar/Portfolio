@@ -30,7 +30,7 @@ const Projects = () => {
 
             <div className="project-actions">
               <a 
-                href="https://intelligent-traffic-management-system-web-mb7zflk54.vercel.app" 
+                href="https://intelligent-traffic-management-system.vercel.app" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn btn-primary project-link-btn"
