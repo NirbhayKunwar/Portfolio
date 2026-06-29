@@ -554,26 +554,7 @@ a {
   gap: 0.8rem;
 }
 
-.floating-theme-widget.dragging-active {
-  cursor: grabbing !important;
-  user-select: none;
-}
 
-.floating-theme-widget.dragging-active .floating-widget-trigger {
-  cursor: grabbing !important;
-  transform: scale(1.18);
-  border-color: var(--accent-color);
-  animation: dragPulse 0.8s infinite alternate ease-in-out;
-}
-
-@keyframes dragPulse {
-  0% {
-    box-shadow: 0 0 15px rgba(var(--accent-color-rgb), 0.4), 0 6px 20px rgba(0, 0, 0, 0.4);
-  }
-  100% {
-    box-shadow: 0 0 35px rgba(var(--accent-color-rgb), 0.95), 0 10px 30px rgba(0, 0, 0, 0.5);
-  }
-}
 
 .floating-widget-trigger {
   width: 46px;
@@ -621,18 +602,7 @@ a {
   overflow: hidden;
 }
 
-/* If widget is on top half of the screen, open panel below the trigger */
-.floating-theme-widget.open-below .floating-widget-panel {
-  bottom: auto;
-  top: calc(100% + 0.8rem);
-  transform: translateY(15px) scale(0.95);
-}
 
-/* If widget is on left half of the screen, align panel to open towards the right */
-.floating-theme-widget.open-right .floating-widget-panel {
-  right: auto;
-  left: 0;
-}
 
 .floating-theme-widget.open .floating-widget-panel {
   opacity: 1;
